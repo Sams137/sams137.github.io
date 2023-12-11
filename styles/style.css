@@ -3,7 +3,6 @@ html {
   font-family: 'Poppins', Poppins;
 }
 
-
 h1 {
   font-size: 100px;
   text-align: center;
@@ -14,7 +13,6 @@ p, li {
   line-height: 1;
   letter-spacing: 1px;
 }
-
 
 html {
   background-color: #009f3d;
