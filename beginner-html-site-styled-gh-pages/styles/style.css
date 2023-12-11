@@ -1,0 +1,41 @@
+html {
+  font-size: 10px;
+  font-family: 'Poppins', Poppins;
+}
+
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+
+html {
+  background-color: #009f3d;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #0044ff;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #9f0000;
+  text-shadow: 1px 1px 1px rgb(0, 1, 44);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
