@@ -1,4 +1,1 @@
-Sam's webpage
-
-sams137.github.io
-
+# Sam's [webpage](sams137.github.io)
