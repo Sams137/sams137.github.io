@@ -28,9 +28,11 @@ if (!localStorage.getItem("name")) {
   myHeading.textContent = `Sam's page is cool, ${storedName}`;
 }
 
+/*
 myButton.onclick = () => {
   setUserName();
 };
+*/
 
 animeButton.onclick = () => {
   myMove();
