@@ -1,7 +1,8 @@
 const myHeading = document.querySelector("h1");
-myHeading.textContent = "Sam's Page";
-
 const myImage = document.querySelector("img");
+let myButton = document.querySelector("button");
+
+myHeading.textContent = "Sam's Page";
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
@@ -11,8 +12,6 @@ myImage.onclick = () => {
     myImage.setAttribute("src", "images/cup.jpg");
   }
 };
-
-let myButton = document.querySelector("button");
 
 function setUserName() {
   const myName = prompt("Please enter your name.");
