@@ -16,14 +16,14 @@ myImage.onclick = () => {
 function setUserName() {
   const myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
-  myHeading.textContent = `Mozilla is cool, ${myName}`;
+  myHeading.textContent = `Sam's page is cool, ${myName}`;
 }
 
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  myHeading.textContent = `Sam's page is cool, ${storedName}`;
 }
 
 myButton.onclick = () => {
