@@ -1,6 +1,7 @@
 const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let myButton = document.querySelector("button");
+let animeButton = document.querySelectorAll("button")[1]
 var id = null;
 
 myHeading.textContent = "Sam's Page";
@@ -29,6 +30,10 @@ if (!localStorage.getItem("name")) {
 
 myButton.onclick = () => {
   setUserName();
+};
+
+animeButton.onclick = () => {
+  myMove();
 };
 
 function myMove() {
