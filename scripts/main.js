@@ -86,8 +86,8 @@ function myMove() {
     elem_one.style.left = x + 'px';
     elem_one.style.top = y + 'px';
 
-    elem_two.style.left = x + 'px';
-    elem_two.style.top = y + 'px';
+    elem_two.style.left = a + 'px';
+    elem_two.style.top = b + 'px';
     
     pos_elem_one += 0.01;
     pos_elem_two += -0.01;
