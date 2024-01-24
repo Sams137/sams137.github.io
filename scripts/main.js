@@ -2,6 +2,8 @@ const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let myButton = document.querySelector("button");
 let animeButton = document.querySelectorAll("button")[1]
+let semaOne = false;
+let id = null;
 
 myHeading.textContent = "Sam's Page";
 
@@ -18,7 +20,7 @@ function setUserName() {
   const myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
   myHeading.textContent = `Sam's page is cool, ${myName}`;
-}
+};
 
 if (!localStorage.getItem("name")) {
   setUserName();
@@ -34,11 +36,14 @@ myButton.onclick = () => {
 */
 
 animeButton.onclick = () => {
-  myMove();
+  if (semaOne == false) {
+    myMove();
+    semaOne = true;
+  if (semaOne == true) 
+    clearInterval(id);
 };
 
 function myMove() {
-  var id = null;
   var elem = document.getElementById("myAnimation");   
   var pos = 0;
   
