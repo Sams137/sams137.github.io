@@ -50,7 +50,7 @@ function myColors() {
     coloredFont.fontcolor("random"); 
     myHeading.textContent.charAt(ii) = coloredFont;
   }
-}
+};
 
 function myMove() {
   var elem_one = document.getElementById("myAnimation");
