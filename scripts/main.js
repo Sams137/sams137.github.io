@@ -78,7 +78,7 @@ function myMove() {
          offsetY_two = 175;
     
     var x = Math.cos(pos_elem_one) * width_one + offsetX_one;
-    var y = Math.sin(pos_elem_one) * heightone + offsetY_one;
+    var y = Math.sin(pos_elem_one) * height_one + offsetY_one;
 
     var a = Math.cos(pos_elem_two) * width_two + offsetX_two;
     var b = Math.sin(pos_elem_two) * height_two + offsetY_two;
@@ -92,11 +92,11 @@ function myMove() {
     pos_elem_one += 0.01;
     pos_elem_two += -0.01;
     
-    if (pos_elem_one == 500) {
+    if (pos_elem_one > 500) {
       pos_elem_one = 0;
     }
 
-    if (pos_elem_two == -500) {
+    if (pos_elem_two < -500) {
       pos_elem_two = 0;
     }
   }
