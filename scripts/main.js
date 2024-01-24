@@ -46,8 +46,10 @@ animeButton.onclick = () => {
 };
 
 function myMove() {
-  var elem = document.getElementById("myAnimation");   
-  var pos = 0;
+  var elem_one = document.getElementById("myAnimation");
+  var elem_two = document.getElementById("myAnimation_two");
+  var pos_elem_one = 0;
+  var pos_elem_two = 0;
   
   clearInterval(id);
   id = setInterval(circle, 1);
@@ -65,19 +67,37 @@ function myMove() {
   */
   
   function circle() {
-    let  width = 100,
-         height = 100,
-         offsetX = 175,
-         offsetY = 175;
+    let  width_one = 100,
+         height_one = 100,
+         offsetX_one = 175,
+         offsetY_one = 175;
+
+    let  width_two = 137,
+         height_two = 137,
+         offsetX_two = 175,
+         offsetY_two = 175;
     
-    var x = Math.cos(pos) * width + offsetX;
-    var y = Math.sin(pos) * height + offsetY;
+    var x = Math.cos(pos_elem_one) * width + offsetX;
+    var y = Math.sin(pos_elem_one) * height + offsetY;
+
+    var a = Math.cos(pos_elem_two) * width + offsetX;
+    var b = Math.sin(pos_elem_two) * height + offsetY;
     
-    elem.style.left = x + 'px';
-    elem.style.top = y + 'px';
-    pos += 0.01;
-    if (pos == 500) {
-      pos = 0;
+    elem_one.style.left = x + 'px';
+    elem_one.style.top = y + 'px';
+
+    elem_two.style.left = x + 'px';
+    elem_two.style.top = y + 'px';
+    
+    pos_elem_one += 0.01;
+    pos_elem_two -= 0.01;
+    
+    if (pos_elem_one == 500) {
+      pos_elem_one = 0;
+    }
+
+    if (pos_elem_two == -500) {
+      pos_elem_two = 0;
     }
   }
 }
