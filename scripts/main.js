@@ -45,8 +45,10 @@ animeButton.onclick = () => {
 };
 
 function myColors() {
+  var newChar;
   for (var ii = 0; ii < 19; ii++) {
-    myHeading.textContent.charAt(ii) = 'A'; 
+    newChar = myHeading.textContent.charAt(ii); 
+    newChar = 'A';
   }
 };
 
