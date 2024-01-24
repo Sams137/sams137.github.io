@@ -31,7 +31,7 @@ if (!localStorage.getItem("name")) {
 
 myButton.onclick = () => {
   /* setUserName(); */
-  myColors();
+  /* myColors(); */
 };
 
 animeButton.onclick = () => {
