@@ -49,17 +49,9 @@ function myMove() {
     if (pos == 350) {
       clearInterval(id);
     } else {
-      /*
       pos++; 
-      elem.style.top = pos + 'px'; 
+      elem.style.bottom = pos + 'px'; 
       elem.style.left = pos + 'px'; 
-      */
-      
-      var x = pathRadius * Math.cos(angle * Math.PI / 180),
-        y = pathRadius * Math.sin(angle * Math.PI / 180);
-
-    elem.style.top = (x - circleRadius) + 'px';
-    elem.style.left = (y - circleRadius) + 'px';
     }
   }
 }
