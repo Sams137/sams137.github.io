@@ -55,6 +55,7 @@ button {
   height: 400px;
   position: relative;
   background-color: #25b7c4;
+  border-radius: 50%
 }
 
 #myAnimation {
