@@ -62,5 +62,5 @@ button {
   height: 50px;
   position: absolute; 
   background-color: red;
-  display:inline-block;
+  border-radius: 50%;
 }
