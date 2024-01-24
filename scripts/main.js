@@ -69,13 +69,13 @@ function myMove() {
   function circle() {
     let  width_one = 100,
          height_one = 100,
-         offsetX_one = 175,
-         offsetY_one = 175;
+         offsetX_one = 150,
+         offsetY_one = 150;
 
     let  width_two = 137,
          height_two = 137,
-         offsetX_two = 175,
-         offsetY_two = 175;
+         offsetX_two = 190,
+         offsetY_two = 190;
     
     var x = Math.cos(pos_elem_one) * width_one + offsetX_one;
     var y = Math.sin(pos_elem_one) * height_one + offsetY_one;
