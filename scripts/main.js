@@ -43,7 +43,7 @@ function myMove() {
   var pos = 0;
   
   clearInterval(id);
-  id = setInterval(circle, 100);
+  id = setInterval(circle, 10);
 
   /*
   function frame() {
