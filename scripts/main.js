@@ -46,8 +46,7 @@ animeButton.onclick = () => {
 
 function myColors() {
   for (var ii = 0; ii < 19; ii++) {
-    var coloredFont = myHeading.textContent.charAt(ii);
-    coloredFont.style.color = 'blue'; 
+    myHeading.textContent.charAt(ii).style.color = 'blue'; 
   }
 };
 
