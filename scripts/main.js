@@ -2,7 +2,7 @@ const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let myButton = document.querySelector("button");
 let animeButton = document.querySelectorAll("button")[1]
-let semaOne = false;
+let animFlag = false;
 let id = null;
 
 myHeading.textContent = "Sam's Page";
@@ -36,11 +36,12 @@ myButton.onclick = () => {
 */
 
 animeButton.onclick = () => {
-  if (semaOne == false) {
+  if (animFlag == false) {
     myMove();
-    semaOne = true;
-  } else if (semaOne == true) {
+    animFlag = true;
+  } else if (animFlag == true) {
     clearInterval(id);
+    animFlag = false;
   }
 };
 
