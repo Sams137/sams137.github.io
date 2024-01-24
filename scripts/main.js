@@ -44,7 +44,8 @@ function myMove() {
   
   clearInterval(id);
   id = setInterval(circle, 100);
-  
+
+  /*
   function frame() {
     if (pos == 350) {
       clearInterval(id);
@@ -54,7 +55,8 @@ function myMove() {
       elem.style.left = pos + 'px'; 
     }
   }
-
+  */
+  
   function circle() {
     var width = 100,
         height = 100,
