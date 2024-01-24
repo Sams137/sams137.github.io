@@ -77,11 +77,11 @@ function myMove() {
          offsetX_two = 175,
          offsetY_two = 175;
     
-    var x = Math.cos(pos_elem_one) * width + offsetX;
-    var y = Math.sin(pos_elem_one) * height + offsetY;
+    var x = Math.cos(pos_elem_one) * width_one + offsetX_one;
+    var y = Math.sin(pos_elem_one) * heightone + offsetY_one;
 
-    var a = Math.cos(pos_elem_two) * width + offsetX;
-    var b = Math.sin(pos_elem_two) * height + offsetY;
+    var a = Math.cos(pos_elem_two) * width_two + offsetX_two;
+    var b = Math.sin(pos_elem_two) * height_two + offsetY_two;
     
     elem_one.style.left = x + 'px';
     elem_one.style.top = y + 'px';
