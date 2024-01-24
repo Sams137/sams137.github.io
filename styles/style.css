@@ -59,8 +59,18 @@ button {
 }
 
 #myAnimation {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
+  position: absolute; 
+  background-color: blue;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#myAnimation_two {
+  width: 50px;
+  height: 50px;
   position: absolute; 
   background-color: blue;
   border-radius: 50%;
