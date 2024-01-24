@@ -39,8 +39,9 @@ animeButton.onclick = () => {
   if (semaOne == false) {
     myMove();
     semaOne = true;
-  if (semaOne == true) 
+  } else if (semaOne == true) {
     clearInterval(id);
+  }
 };
 
 function myMove() {
