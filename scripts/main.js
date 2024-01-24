@@ -65,6 +65,7 @@ function myMove() {
     
     var x = Math.cos(pos) * width + offsetX;
     var y = Math.sin(pos) * height + offsetY;
+    
     elem.style.left = x + 'px';
     elem.style.top = y + 'px';
     pos++
