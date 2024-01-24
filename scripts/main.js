@@ -68,5 +68,8 @@ function myMove() {
     elem.style.left = x + 'px';
     elem.style.top = y + 'px';
     pos++
+    if (pos == 500) {
+      pos = 0;
+    }
   }
 }
