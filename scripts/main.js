@@ -29,11 +29,10 @@ if (!localStorage.getItem("name")) {
   myHeading.textContent = `Sam's page is cool, ${storedName}`;
 }
 
-/*
 myButton.onclick = () => {
-  setUserName();
+  /* setUserName(); */
+  myColors();
 };
-*/
 
 animeButton.onclick = () => {
   if (animFlag == false) {
@@ -45,6 +44,12 @@ animeButton.onclick = () => {
   }
 };
 
+function myColors() {
+  for (var ii = 0; ii < 19; ii++) {
+    var coloredFont = myHeading.textContent.charAt(ii);
+    coloredFont.fontcolor("random"); 
+}
+
 function myMove() {
   var elem_one = document.getElementById("myAnimation");
   var elem_two = document.getElementById("myAnimation_two");
@@ -54,18 +59,6 @@ function myMove() {
   clearInterval(id);
   id = setInterval(circle, 1);
 
-  /*
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.bottom = pos + 'px'; 
-      elem.style.left = pos + 'px'; 
-    }
-  }
-  */
-  
   function circle() {
     let  width_one = 100,
          height_one = 100,
