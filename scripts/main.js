@@ -90,7 +90,7 @@ function myMove() {
     elem_two.style.top = y + 'px';
     
     pos_elem_one += 0.01;
-    pos_elem_two -= 0.01;
+    pos_elem_two += -0.01;
     
     if (pos_elem_one == 500) {
       pos_elem_one = 0;
