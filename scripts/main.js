@@ -60,8 +60,8 @@ function myMove() {
   function circle() {
     let  width = 100,
          height = 100,
-         offsetX = 100,
-         offsetY = 100;
+         offsetX = 200,
+         offsetY = 200;
     
     var x = Math.cos(pos) * width + offsetX;
     var y = Math.sin(pos) * height + offsetY;
