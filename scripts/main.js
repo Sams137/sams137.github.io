@@ -69,8 +69,8 @@ function myMove() {
   function circle() {
     let  width_one = 100,
          height_one = 100,
-         offsetX_one = 150,
-         offsetY_one = 150;
+         offsetX_one = 175,
+         offsetY_one = 175;
 
     let  width_two = 137,
          height_two = 137,
