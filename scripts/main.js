@@ -49,6 +49,7 @@ function myColors() {
     var coloredFont = myHeading.textContent.charAt(ii);
     coloredFont.fontcolor("random"); 
     myHeading.textContent.charAt(ii) = coloredFont;
+  }
 }
 
 function myMove() {
