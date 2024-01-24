@@ -43,7 +43,7 @@ function myMove() {
   var pos = 0;
   
   clearInterval(id);
-  id = setInterval(circle, 10);
+  id = setInterval(circle, 100);
   
   function frame() {
     if (pos == 350) {
@@ -56,8 +56,8 @@ function myMove() {
   }
 
   function circle() {
-    var width = 10,
-        height = 10,
+    var width = 100,
+        height = 100,
         offsetX = 100,
         offsetY = 100;
     var x = Math.cos(new Date()) * width + offsetX;
