@@ -43,7 +43,7 @@ function myMove() {
   var pos = 0;
   
   clearInterval(id);
-  id = setInterval(frame, 10);
+  id = setInterval(circle, 10);
   
   function frame() {
     if (pos == 350) {
@@ -53,5 +53,16 @@ function myMove() {
       elem.style.bottom = pos + 'px'; 
       elem.style.left = pos + 'px'; 
     }
+  }
+
+  function circle() {
+    var width = 10,
+        height = 10,
+        offsetX = 100,
+        offsetY = 100;
+    var x = Math.cos(new Date()) * width + offsetX;
+    var y = Math.sin(new Date()) * height + offsetY;
+    elem.style.left = x + 'px';
+    elem.style.top = y + 'px';
   }
 }
