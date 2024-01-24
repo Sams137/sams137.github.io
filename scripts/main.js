@@ -58,13 +58,15 @@ function myMove() {
   */
   
   function circle() {
-    var width = 100,
-        height = 100,
-        offsetX = 100,
-        offsetY = 100;
-    var x = Math.cos(new Date()) * width + offsetX;
-    var y = Math.sin(new Date()) * height + offsetY;
+    let  width = 100,
+         height = 100,
+         offsetX = 100,
+         offsetY = 100;
+    
+    var x = Math.cos(pos) * width + offsetX;
+    var y = Math.sin(pos) * height + offsetY;
     elem.style.left = x + 'px';
     elem.style.top = y + 'px';
+    pos++
   }
 }
