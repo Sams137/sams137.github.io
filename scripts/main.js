@@ -7,7 +7,7 @@ let myButton = document.querySelector("button");
 let animeButton = document.querySelectorAll("button")[1];
 let animFlag = false;
 let id = null;
-let dnsName = localHostOrDomainIs("github.com", "github.com");
+/* let dnsName = localHostOrDomainIs("github.com", "github.com"); */
 
 /*************
  * Functions *
