@@ -4,9 +4,10 @@
 const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let myButton = document.querySelector("button");
-let animeButton = document.querySelectorAll("button")[1]
+let animeButton = document.querySelectorAll("button")[1];
 let animFlag = false;
 let id = null;
+let dnsName = localHostOrDomainIs("github.com", "github.com");
 
 /*************
  * Functions *
