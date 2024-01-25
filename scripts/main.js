@@ -1,3 +1,6 @@
+/*************
+ * Variables *
+ *************/
 const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let myButton = document.querySelector("button");
@@ -5,45 +8,13 @@ let animeButton = document.querySelectorAll("button")[1]
 let animFlag = false;
 let id = null;
 
-myHeading.textContent = "Sam's Page";
-
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/cup.jpg") {
-    myImage.setAttribute("src", "images/cup_sat.jpg");
-  } else {
-    myImage.setAttribute("src", "images/cup.jpg");
-  }
-};
-
+/*************
+ * Functions *
+ *************/
 function setUserName() {
   const myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
   myHeading.textContent = `Sam's page is cool, ${myName}`;
-};
-
-/*
-if (!localStorage.getItem("name")) {
-  setUserName();
-} else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Sam's page is cool, ${storedName}`;
-}
-*/
-
-myButton.onclick = () => {
-  /* setUserName(); */
-  /* myColors(); */
-};
-
-animeButton.onclick = () => {
-  if (animFlag == false) {
-    myMove();
-    animFlag = true;
-  } else if (animFlag == true) {
-    clearInterval(id);
-    animFlag = false;
-  }
 };
 
 function myColors() {
@@ -98,3 +69,47 @@ function myMove() {
     }
   }
 }
+
+/***********
+ * Actions *
+ ***********/
+myHeading.textContent = "Sam's Page";
+
+/* Events */
+myImage.onclick = () => {
+  const mySrc = myImage.getAttribute("src");
+  if (mySrc === "images/cup.jpg") {
+    myImage.setAttribute("src", "images/cup_sat.jpg");
+  } else {
+    myImage.setAttribute("src", "images/cup.jpg");
+  }
+};
+
+myButton.onclick = () => {
+  /* setUserName(); */
+  /* myColors(); */
+};
+
+animeButton.onclick = () => {
+  if (animFlag == false) {
+    myMove();
+    animFlag = true;
+  } else if (animFlag == true) {
+    clearInterval(id);
+    animFlag = false;
+  }
+};
+
+/* Conditionals */
+/*
+if (!localStorage.getItem("name")) {
+  setUserName();
+} else {
+  const storedName = localStorage.getItem("name");
+  myHeading.textContent = `Sam's page is cool, ${storedName}`;
+}
+*/
+
+
+
+
