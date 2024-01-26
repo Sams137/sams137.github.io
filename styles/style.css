@@ -13,7 +13,7 @@ h1 {
   text-shadow: 1px 1px 1px rgb(0, 1, 44);
 }
 
-p, li {
+p, li, div {
   font-size: 30px;
   line-height: 1;
   letter-spacing: 1px;
