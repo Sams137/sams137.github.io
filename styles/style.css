@@ -58,19 +58,6 @@ button {
   letter-spacing: 1px;
 }
 
-span {
-  color: blue;
-  text-align: center;
-  height: 50px;
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: 1px;
-}
-
-.datetime {
-  text-align: center;
-}
-
 #myHeading {
   color: orange;
 }
