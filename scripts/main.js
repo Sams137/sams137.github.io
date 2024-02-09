@@ -74,7 +74,7 @@ function myMove() {
 function updateDateTime() {
   // create a new `Date` object
   const now = new Date();
-  const eponow = new Date.now();
+  const eponow = Date.now();
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   const currentDateTime = now.toLocaleDateString("fi-FI", options);
