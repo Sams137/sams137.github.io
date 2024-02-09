@@ -73,8 +73,7 @@ function myMove() {
 
 function normalDateTime() {
   const now = new Date();
-  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  const currentDateTime = now.toLocaleDateString("fi-FI", options);
+  const currentDateTime = now.toLocaleTimeString("fi-FI");
   document.querySelector('#datetime').textContent = currentDateTime;
 }
 
