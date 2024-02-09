@@ -79,11 +79,12 @@ function normalDateTime() {
 
 function epochTime() {
   const eponow = new Date().getTime();
+  eponow = eponow/1000|0;
   document.querySelector('#epochtime').textContent = eponow;
 }
 
 setInterval(normalDateTime, 1000);
-setInterval(epochTime, 1);
+setInterval(epochTime, 1000);
 
 /***********
  * Actions *
