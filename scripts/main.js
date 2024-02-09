@@ -79,6 +79,8 @@ function updateDateTime() {
   // get the current date and time as a string
   const currentDateTime = now.toLocaleString();
 
+  parseInt((now.getTime() / 1000).toFixed(0))
+
   // update the `textContent` property of the `span` element with the `id` of `datetime`
   document.querySelector('#datetime').textContent = currentDateTime;
 }
