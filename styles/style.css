@@ -110,6 +110,14 @@ button {
   letter-spacing: 1px;
 }
 
+#datetime {
+  color: blue;
+}
+
+#epochtime {
+  color: blue;
+}
+
 
 
 
