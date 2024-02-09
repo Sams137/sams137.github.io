@@ -75,14 +75,19 @@ function myMove() {
 function updateDateTime() {
   // create a new `Date` object
   const now = new Date();
+  const eponow = new Date.now();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   // get the current date and time as a string
-  const currentDateTime = now.toLocaleString();
+  const currentDateTime = now.toLocaleDateString("fi-FI", options);
 
-  parseInt((now/1000).toFixed(0))
+  parseInt((eponow/1000).toFixed(0));
+
+  
 
   // update the `textContent` property of the `span` element with the `id` of `datetime`
   document.querySelector('#datetime').textContent = currentDateTime;
+  document.querySelector('#epochtime').textContent = eponow;
 }
 
 setInterval(updateDateTime, 1000);
