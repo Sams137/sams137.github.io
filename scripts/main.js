@@ -81,7 +81,7 @@ function normalDateTime() {
 function epochTime() {
   const eponow = Date.now();
   parseInt((eponow/1000).toFixed(0));
-  document.querySelector('#epochtime').textContent = eponow;  
+  document.querySelector('#epochtime').textContent = eponow.toString();  
 }
 
 setInterval(normalDateTime, 1000);
