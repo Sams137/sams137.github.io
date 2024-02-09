@@ -71,17 +71,16 @@ function myMove() {
   }
 }
 
-function display_c(){
-   var refresh=1000; // Refresh rate in milli seconds
-   mytime=setTimeout('display_ct()',refresh)
-}
+// create a function to update the date and time
+function updateDateTime() {
+  // create a new `Date` object
+  const now = new Date();
 
-function display_ct() {
-  var CDate = new Date()
-  var NewDate=CDate.toDateString(); 
-  NewDate = NewDate + " - " + CDate.toLocaleTimeString();
-  document.getElementById('ct').innerHTML = NewDate;
-  display_c();
+  // get the current date and time as a string
+  const currentDateTime = now.toLocaleString();
+
+  // update the `textContent` property of the `span` element with the `id` of `datetime`
+  document.querySelector('#datetime').textContent = currentDateTime;
 }
 
 /***********
