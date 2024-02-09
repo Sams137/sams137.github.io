@@ -71,20 +71,21 @@ function myMove() {
   }
 }
 
-function updateDateTime() {
-  // create a new `Date` object
+function normalDateTime() {
   const now = new Date();
-  const eponow = Date.now();
   var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
   const currentDateTime = now.toLocaleDateString("fi-FI", options);
   document.querySelector('#datetime').textContent = currentDateTime;
-  
-  parseInt((eponow/1000).toFixed(0));
-  document.querySelector('#epochtime').textContent = eponow;
 }
 
-setInterval(updateDateTime, 1000);
+function epochTime() {
+  const eponow = Date.now();
+  parseInt((eponow/1000).toFixed(0));
+  document.querySelector('#epochtime').textContent = eponow;  
+}
+
+setInterval(normalDateTime, 1000);
+setInterval(update)
 
 /***********
  * Actions *
