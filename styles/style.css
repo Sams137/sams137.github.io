@@ -59,6 +59,7 @@ button {
 }
 
 span {
+  color: blue;
   text-align: center;
   height: 50px;
   font-size: 30px;
