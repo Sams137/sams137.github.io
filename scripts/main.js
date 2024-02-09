@@ -78,7 +78,7 @@ function normalDateTime() {
 }
 
 function epochTime() {
-  const eponow = new Date.getTime();
+  const eponow = new Date().getTime();
   document.querySelector('#epochtime').textContent = eponow;
 }
 
