@@ -79,7 +79,7 @@ function normalDateTime() {
 
 function epochTime() {
   var eponow = new Date().getTime();
-  eponow = eponow/1000|0;
+  eponow = (eponow/1000|0)+7200;
   document.querySelector('#epochtime').textContent = eponow;
 }
 
