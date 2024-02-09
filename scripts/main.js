@@ -83,6 +83,8 @@ function updateDateTime() {
   document.querySelector('#datetime').textContent = currentDateTime;
 }
 
+setInterval(updateDateTime, 1000);
+
 /***********
  * Actions *
  ***********/
