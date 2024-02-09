@@ -67,6 +67,10 @@ span {
   letter-spacing: 1px;
 }
 
+.datetime {
+  text-align: center;
+}
+
 #myHeading {
   color: orange;
 }
