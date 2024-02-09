@@ -85,7 +85,7 @@ function epochTime() {
 }
 
 setInterval(normalDateTime, 1000);
-setInterval(update)
+setInterval(epochTime, 1);
 
 /***********
  * Actions *
