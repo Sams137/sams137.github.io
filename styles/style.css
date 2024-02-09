@@ -50,6 +50,13 @@ button {
   cursor: pointer;
 }
 
+ div {
+  height: 100px;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
 #myHeading {
   color: orange;
 }
@@ -102,11 +109,6 @@ button {
   letter-spacing: 1px;
 }
 
-#ct {
-  height: 100px;
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: 1px;
-}
+
 
 
