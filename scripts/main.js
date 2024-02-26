@@ -102,9 +102,8 @@ myImage.onclick = () => {
   }
 };
 
-myButton.onclick = () => {
-  /* setUserName(); */
-  /* myColors(); */
+fmiButton.onclick = () => {
+  window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Vaasa&parameters=Temperature';
 };
 
 animeButton.onclick = () => {
