@@ -120,19 +120,3 @@ animeButton.onclick = () => {
     animFlag = false;
   }
 };
-
-entsoButton.onclick = () => {}
-
-/* Conditionals */
-/*
-if (!localStorage.getItem("name")) {
-  setUserName();
-} else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Sam's page is cool, ${storedName}`;
-}
-*/
-
-
-
-
