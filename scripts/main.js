@@ -4,7 +4,8 @@
 const myHeading = document.querySelector("h1");
 const myImage = document.querySelector("img");
 let animeButton = document.querySelector("button");
-let fmiButton = document.querySelectorAll("button")[1];
+let fmiTempButton = document.querySelectorAll("button")[1];
+let fmiWindButton = document.querySelectorAll("button")[2];
 let animFlag = false;
 let id = null;
 /* let dnsName = localHostOrDomainIs("github.com", "github.com"); */
@@ -102,8 +103,12 @@ myImage.onclick = () => {
   }
 };
 
-fmiButton.onclick = () => {
+fmiTempButton.onclick = () => {
   window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Vaasa&parameters=Temperature';
+};
+
+fmiWindButton.onclick = () => {
+  window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Vaasa&parameters=WindSpeedMS';
 };
 
 animeButton.onclick = () => {
