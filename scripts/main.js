@@ -113,7 +113,7 @@ fmiWindButton.onclick = () => {
 };
 
 fmiObsButton.onclick = () => {
-  window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Helsinki&parameters=WindSpeedMS';
+  window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::observations::weather::timevaluepair&place=Helsinki&parameters=t2m';
 };
 
 animeButton.onclick = () => {
