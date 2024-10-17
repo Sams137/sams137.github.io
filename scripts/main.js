@@ -6,6 +6,7 @@ const myImage = document.querySelector("img");
 let animeButton = document.querySelector("button");
 let fmiTempButton = document.querySelectorAll("button")[1];
 let fmiWindButton = document.querySelectorAll("button")[2];
+let fmiObsButton = document.querySelectorAll("button")[3];
 let animFlag = false;
 let id = null;
 /* let dnsName = localHostOrDomainIs("github.com", "github.com"); */
