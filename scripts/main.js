@@ -112,6 +112,10 @@ fmiWindButton.onclick = () => {
   window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Helsinki&parameters=WindSpeedMS';
 };
 
+fmiObsButton.onclick = () => {
+  window.location.href = 'https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=GetFeature&storedquery_id=fmi::forecast::harmonie::surface::point::timevaluepair&place=Helsinki&parameters=WindSpeedMS';
+};
+
 animeButton.onclick = () => {
   if (animFlag == false) {
     myMove();
