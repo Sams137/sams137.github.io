@@ -38,6 +38,7 @@ img {
 }
 
 button {
+  align: center;
   font-family: "helvetica neue", helvetica, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
