@@ -58,16 +58,18 @@ button {
     justify-content: center; /* Centers children horizontally */
     align-items: center; /* Centers children vertically */
     gap: 10px; /* Adds space between animation elements */
-    margin: 20px 0; /* Optional: Adds vertical spacing */
+    position: relative; /* Ensures absolute-positioned children are relative to this container */
+    min-height: 200px; /* Adjust as needed to ensure visibility */
+    width: 100%; /* Ensures container spans the page width */
 }
 
-/* Optional: Style for animation divs to ensure they are visible */
+/* Style for animation divs to ensure they are visible and centered */
 #myAnimation, #myAnimation_two, #myCenterDot {
     width: 50px; /* Adjust size as needed */
     height: 50px; /* Adjust size as needed */
     background-color: #ccc; /* Placeholder background for visibility */
+    position: relative; /* Default to relative unless absolute is required */
 }
-
  div {
   text-align: center;
   height: 50px;
