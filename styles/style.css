@@ -37,18 +37,35 @@ img {
   margin: 0 auto;
 }
 
+/* Center-align the button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 10px; /* Adds space between buttons */
+    margin: 20px 0; /* Optional: Adds vertical spacing */
+}
+
+/* Optional: Style buttons for better appearance */
 button {
-  align: center;
-  font-family: "helvetica neue", helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: 2px solid rgb(200 200 0 / 0.6);
-  background-color: #0b3831;
-  color: #a3d9d6;
-  box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
-  border-radius: 10px;
-  padding: 3px 10px;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/* Center-align the animation container */
+#myContainer {
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    gap: 10px; /* Adds space between animation elements */
+    margin: 20px 0; /* Optional: Adds vertical spacing */
+}
+
+/* Optional: Style for animation divs to ensure they are visible */
+#myAnimation, #myAnimation_two, #myCenterDot {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: #ccc; /* Placeholder background for visibility */
 }
 
  div {
